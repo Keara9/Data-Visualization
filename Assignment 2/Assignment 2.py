@@ -98,7 +98,7 @@ def update_gdp_graph(selected_series):
     #Filter the data for the selected series
     filtered_gdp_df = df_GDP[df_GDP['Series Name'] == selected_series]
     
-    # reate a line plot with Year on the x-axis and Value on the y-axis
+    # Create a line plot with Year on the x-axis and Value on the y-axis
     fig = px.line(
         filtered_gdp_df,
         x='Year',
