@@ -12,10 +12,9 @@ app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 df_GDP = pd.read_csv('GDP/GDP cleaned.csv')
 df_InfantMortality = pd.read_csv('Infant Mortality/Infant Mortality Cleaned.csv')
 df_Freshwater = pd.read_csv('Freshwater Data/NewZealand Freshwater cleaned.csv')
-df_Freshwater = df_Freshwater[(df_Freshwater['Year'] >= 1999) & (df_Freshwater['Year'] <= 2021)]
 
 # define the layout of the Dash app
-                     
+                    
 app.layout = html.Div(
     dcc.Tabs([
         #GDP Tab
@@ -39,7 +38,7 @@ app.layout = html.Div(
         ]),  
         #Infant Mortality Tab
         dcc.Tab(label='Infant Mortality Visualization', children=[
-            html.H1("Infant Mortality in New Zealand", style={'textAlign': 'center'}),
+            html.H1("Infant Mortality in New Zealand from 1960 to 2022", style={'textAlign': 'center'}),
 
             #Dropdown to select an Infant Mortality series
             html.Div([
@@ -67,7 +66,7 @@ app.layout = html.Div(
 
         #Freshwater Tab
         dcc.Tab(label='Freshwater Visualization', children=[
-            html.H1("Freshwater in New Zealand", style={'textAlign': 'center'}),
+            html.H1("Freshwater Use in New Zealand by Industry", style={'textAlign': 'center'}),
             html.Div([  
                 html.Label("Select a Year:", style={'fontSize': 18}),
             dcc.Dropdown(
@@ -155,16 +154,16 @@ def update_freshwater_graph(selected_year):
     filtered_df = df_Freshwater[df_Freshwater['Year'] == selected_year]
     
     # Filter the data for the freshwater withdrawal series
-    withdrawal_series = [
-        'Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)',
-        'Annual freshwater withdrawals, industry (% of total freshwater withdrawal)',
-        'Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)'
-    ]
-    filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
+   # withdrawal_series = [
+    #    'Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)',
+     #   'Annual freshwater withdrawals, industry (% of total freshwater withdrawal)',
+     #   'Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)'
+   # ]
+    #filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
     
     fig = px.pie(
         filtered_df,
-        values='Value',
+        values ='Value',
         names='Series Name',
         title=f'Annual Freshwater Withdrawals ({selected_year})',
         hole=0.3
@@ -173,4 +172,4 @@ def update_freshwater_graph(selected_year):
     return fig
 
 if __name__ == '__main__':
-    app.run(debug=True )
+    app.run(debug=True)
