@@ -128,7 +128,7 @@ def update_graph(selected_series):
     filtered_df = df_InfantMortality[df_InfantMortality['Series Name'] == selected_series]
     
     # Create a line plot with Year on the x-axis and Value on the y-axis
-    fig = px.bar(
+    fig = px.line(
         filtered_df,
         x='Year',  
         y='Value',  
@@ -161,12 +161,12 @@ def update_freshwater_graph(selected_year):
    # ]
     #filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
     
-    fig = px.line(
+    fig = px.area(
         filtered_df,
-        values ='Value',
-        names='Series Name',
-        title=f'Annual Freshwater Withdrawals ({selected_year})',
-        hole=0.3
+        x ='Series Name',
+        y='Value',
+        labels={'Value': 'Value', 'Series Name': 'Series'},
+        title=f'Annual Freshwater Withdrawals',
     )
     
     return fig
