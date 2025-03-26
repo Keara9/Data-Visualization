@@ -65,28 +65,29 @@ app.layout = html.Div(
         ]),
 
         #Freshwater Tab
-        dcc.Tab(label='Freshwater Visualization', children=[
-            html.H1("Freshwater Use in New Zealand by Industry", style={'textAlign': 'center'}),
-            html.Div([  
-                html.Label("Select a Year:", style={'fontSize': 18}),
+    dcc.Tab(label='Freshwater Visualization', children=[
+        html.H1("Freshwater Withdrawals by INdustry", style={'textAlign': 'center'}),
+        html.Div([  
+            html.Label("Select a Year:", style={'fontSize': 18}),
             dcc.Dropdown(
                 id='freshwater-year-dropdown',
                 options=[{'label': year, 'value': year} for year in df_Freshwater['Year'].unique()],
                 value=df_Freshwater['Year'].unique()[0],  # Default value (first year)
                 clearable=False,
                 style={'width': '50%', 'margin': 'auto'}
-            ),
-            dcc.Graph(id='freshwater-graph'),  
-            dash_table.DataTable(
-                id='freshwater-table',
-                columns=[{"name": i, "id": i} for i in df_Freshwater.columns],
-                data=df_Freshwater.to_dict('records'),
-                page_size=10
             )
-            ])
-        ])
+        ]),
+        dcc.Graph(id='freshwater-graph'), 
+        dcc.Graph(id='freshwater-graph2'), 
+        dash_table.DataTable(
+            id='freshwater-table',
+            columns=[{"name": i, "id": i} for i in df_Freshwater.columns],
+            data=df_Freshwater.to_dict('records'),
+            page_size=10
+        )
     ])
-)
+        ])
+    )
 # Callback to update the GDP graph
 @callback(
     Output('gdp-graph', 'figure'),
@@ -154,22 +155,54 @@ def update_freshwater_graph(selected_year):
     filtered_df = df_Freshwater[df_Freshwater['Year'] == selected_year]
     
     # Filter the data for the freshwater withdrawal series
-   # withdrawal_series = [
-    #    'Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)',
-     #   'Annual freshwater withdrawals, industry (% of total freshwater withdrawal)',
-     #   'Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)'
-   # ]
-    #filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
+    withdrawal_series = [
+        'Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)',
+        'Annual freshwater withdrawals, industry (% of total freshwater withdrawal)',
+        'Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)'
+    ]
+    filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
     
-    fig = px.area(
+    fig = px.pie(
         filtered_df,
-        x ='Series Name',
-        y='Value',
-        labels={'Value': 'Value', 'Series Name': 'Series'},
-        title=f'Annual Freshwater Withdrawals',
+        values='Value',
+        names='Series Name',
+        title=f'Annual Freshwater Withdrawals by Industry ({selected_year})',
+        hole=0.3
     )
     
+    return fig 
+
+@callback(
+    Output('freshwater-graph2', 'figure'),
+    Input('freshwater-year-dropdown', 'value')
+)
+
+
+def update_freshwater_graph2(selected_year): 
+    withdrawal_series = [
+        'Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)',
+        'Annual freshwater withdrawals, industry (% of total freshwater withdrawal)',
+        'Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)'
+    ]
+    
+    water_stress_series = 'Water stress: freshwater withdrawal as a proportion of available freshwater resources (%)'
+    filtered_df = df_Freshwater[(df_Freshwater['Year'] == selected_year) & (df_Freshwater['Series Name'] == water_stress_series)]
+
+    fig = px.bar(
+        filtered_df,
+        x='Year',
+        y='Value',
+        title=f'Water Stress Level ({selected_year})',
+        labels={'Value': 'Water Stress (%)', 'Year': 'Year'},
+        color_discrete_sequence=['#1f77b4']
+    )
+    fig.update_layout(
+        xaxis_title='Year',
+        yaxis_title='Water Stress (%)',
+        template='plotly_white'
+    )
     return fig
+
 
 if __name__ == '__main__':
     app.run(debug=True)
