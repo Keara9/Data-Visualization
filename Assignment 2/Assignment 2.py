@@ -161,7 +161,7 @@ def update_freshwater_graph(selected_year):
    # ]
     #filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
     
-    fig = px.pie(
+    fig = px.line(
         filtered_df,
         values ='Value',
         names='Series Name',
