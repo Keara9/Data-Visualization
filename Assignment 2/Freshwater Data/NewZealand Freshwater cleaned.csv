@@ -1,10 +1,334 @@
-Country Name,Country Code,Series Name,Series Code,1985 [YR1985],1986 [YR1986],1987 [YR1987],1988 [YR1988],1989 [YR1989],1990 [YR1990],1991 [YR1991],1992 [YR1992],1993 [YR1993],1994 [YR1994],1995 [YR1995],1996 [YR1996],1997 [YR1997],1998 [YR1998],1999 [YR1999],2000 [YR2000],2001 [YR2001],2002 [YR2002],2003 [YR2003],2004 [YR2004],2005 [YR2005],2006 [YR2006],2007 [YR2007],2008 [YR2008],2009 [YR2009],2010 [YR2010],2011 [YR2011],2012 [YR2012],2013 [YR2013],2014 [YR2014],2015 [YR2015],2016 [YR2016],2017 [YR2017],2018 [YR2018],2019 [YR2019],2020 [YR2020],2021 [YR2021]
-New Zealand,NZL,"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",ER.H2O.FWAG.ZS,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,44.0,65.9339094103,63.4784661563,61.654656808,60.2465355352,59.1265240482,58.2144053743,57.4572127139,58.5545796738,59.6201404689,60.6552581542,61.6612189963,62.3868404111,63.1297432331,63.8905522637,64.669922791,65.4685424719,66.2871333563,66.0983318567,65.7324801433,65.587732072,65.587732072,65.587732072
-New Zealand,NZL,"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",ER.H2O.FWDM.ZS,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,46.0,25.7572880068,25.0775690533,24.5726998084,24.1829018701,23.8728588526,23.6203649904,23.4107579462,21.365119197,19.3787713918,17.4491736142,15.5739280908,14.5804127704,13.5632358788,12.5215419426,11.4544337464,10.3609697555,9.2401613447,9.4986669214,9.999588304,10.1977762618,10.1977762618,10.1977762618
-New Zealand,NZL,"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",ER.H2O.FWIN.ZS,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,10.0,8.3088025829,11.4439647904,13.7726433836,15.5705625947,17.0006170993,18.1652296352,19.1320293399,20.0803011292,21.0010881393,21.8955682317,22.7648529129,23.0327468185,23.3070208881,23.5879057937,23.8756434626,24.1704877726,24.472705299,24.4030012218,24.2679315527,24.2144916661,24.2144916661,24.2144916661
-New Zealand,NZL,"Annual freshwater withdrawals, total (% of internal resources)",ER.H2O.FWTL.ZS,0.581039755351682,0.608125819143731,0.635211882905199,0.662297946697248,0.689384010489297,0.716470074281346,0.743556138042814,0.770642201834862,0.797728265626911,0.824814329388379,0.851900393180428,0.878986456972477,0.906072520764526,0.933158584525994,0.960244648318043,1.03748361730887,1.11472258626911,1.19196155525994,1.26920052425076,1.34643949324159,1.42367846220183,1.50091743119266,1.52331804281346,1.54571865443425,1.56811926605505,1.59051987767584,1.94785932721713,2.30519877675841,2.66253822629969,3.01987767584098,3.01987767584098,3.01987767584098,3.01987767584098,3.01987767584098,3.01987767584098,3.01987767584098,3.01987767584098
-New Zealand,NZL,"Annual freshwater withdrawals, total (billion cubic meters)",ER.H2O.FWTL.K3,1.9,1.9885714286,2.0771428571,2.1657142857,2.2542857143,2.3428571429,2.4314285714,2.52,2.6085714286,2.6971428571,2.7857142857,2.8742857143,2.9628571429,3.0514285714,3.14,3.3925714286,3.6451428571,3.8977142857,4.1502857143,4.4028571429,4.6554285714,4.908,4.98125,5.0545,5.12775,5.201,6.3695,7.538,8.7065,9.875,9.875,9.875,9.875,9.875,9.875,9.875,9.875
-New Zealand,NZL,Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,ER.H2O.FWST.ZS,1.5484922575,1.6206776109,1.6928629643,1.7650483176,1.837233671,1.9094190243,1.9816043777,2.0537897311,2.1259750844,2.1981604378,2.2703457911,2.3425311445,2.4147164978,2.4869018512,2.5590872046,2.7649318896,2.9707765747,3.1766212598,3.3824659448,3.5883106299,3.7941553149,4.0,4.0596984515,4.119396903,4.1790953545,4.238793806,5.1911165444,6.1434392828,7.0957620212,8.0480847596,8.0480847596,8.0480847596,8.0480847596,8.0480847596,8.0480847596,8.0480847596,8.0480847596
-New Zealand,NZL,Renewable internal freshwater resources per capita (cubic meters),ER.H2O.INTR.PC,100705.244679868,100730.061916644,99865.6242365013,99591.8864591582,99114.9369544132,98204.0963421226,93559.5548052988,92589.9708355749,91540.2273109009,90331.4917127072,89018.3481243535,87620.578778135,86478.1953296485,85714.2857142857,85265.0517587547,84765.5338673303,84267.4913026672,82816.2593389895,81197.8545887962,80000.0,79102.0585887419,78143.6696458443,77418.438373029,76764.1673317996,76000.5578022591,75160.3190291218,74589.4160583942,74181.6201991788,73613.8312960086,72401.1956160744,70941.9881112509,69366.3689781719,67932.5245138773,66726.5232828633,65673.2005141388,64241.0907233508,63975.8965429538
-New Zealand,NZL,"Renewable internal freshwater resources, total (billion cubic meters)",ER.H2O.INTR.K3,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0,327.0
-New Zealand,NZL,"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",ER.GDP.FWTL.M3.KD,44.6176992368472,43.783768512785,42.3240802471217,40.4492288791038,38.9226904806772,37.5085723244939,35.7480079956657,34.8688156492511,35.8380242555538,36.4354111458457,36.9429326497502,37.0973881599151,36.7366551250818,35.9767637342101,36.8414914534816,35.0775363105743,33.7607623287101,33.0613738391344,32.5176928599644,31.9054499002039,31.1863035398378,30.4036565026122,30.8702148127218,30.0457407086896,29.6011502597417,29.605854616689,24.7164251075085,21.3631733008368,19.0065436299578,17.3866468462786,18.0358704592285,18.7119110571857,19.3476075377795,20.0246764890284,20.4976517739372,20.4105559278989,21.3384703447816
+Series Name,Year,Value
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1985,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1985,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1985,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1985,0.581039755351682
+"Annual freshwater withdrawals, total (billion cubic meters)",1985,1.9
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1985,1.5484922575
+Renewable internal freshwater resources per capita (cubic meters),1985,100705.244679868
+"Renewable internal freshwater resources, total (billion cubic meters)",1985,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1985,44.6176992368472
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1986,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1986,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1986,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1986,0.608125819143731
+"Annual freshwater withdrawals, total (billion cubic meters)",1986,1.9885714286
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1986,1.6206776109
+Renewable internal freshwater resources per capita (cubic meters),1986,100730.061916644
+"Renewable internal freshwater resources, total (billion cubic meters)",1986,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1986,43.783768512785
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1987,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1987,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1987,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1987,0.635211882905199
+"Annual freshwater withdrawals, total (billion cubic meters)",1987,2.0771428571
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1987,1.6928629643
+Renewable internal freshwater resources per capita (cubic meters),1987,99865.6242365013
+"Renewable internal freshwater resources, total (billion cubic meters)",1987,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1987,42.3240802471217
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1988,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1988,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1988,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1988,0.662297946697248
+"Annual freshwater withdrawals, total (billion cubic meters)",1988,2.1657142857
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1988,1.7650483176
+Renewable internal freshwater resources per capita (cubic meters),1988,99591.8864591582
+"Renewable internal freshwater resources, total (billion cubic meters)",1988,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1988,40.4492288791038
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1989,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1989,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1989,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1989,0.689384010489297
+"Annual freshwater withdrawals, total (billion cubic meters)",1989,2.2542857143
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1989,1.837233671
+Renewable internal freshwater resources per capita (cubic meters),1989,99114.9369544132
+"Renewable internal freshwater resources, total (billion cubic meters)",1989,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1989,38.9226904806772
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1990,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1990,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1990,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1990,0.716470074281346
+"Annual freshwater withdrawals, total (billion cubic meters)",1990,2.3428571429
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1990,1.9094190243
+Renewable internal freshwater resources per capita (cubic meters),1990,98204.0963421226
+"Renewable internal freshwater resources, total (billion cubic meters)",1990,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1990,37.5085723244939
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1991,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1991,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1991,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1991,0.743556138042814
+"Annual freshwater withdrawals, total (billion cubic meters)",1991,2.4314285714
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1991,1.9816043777
+Renewable internal freshwater resources per capita (cubic meters),1991,93559.5548052988
+"Renewable internal freshwater resources, total (billion cubic meters)",1991,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1991,35.7480079956657
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1992,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1992,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1992,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1992,0.770642201834862
+"Annual freshwater withdrawals, total (billion cubic meters)",1992,2.52
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1992,2.0537897311
+Renewable internal freshwater resources per capita (cubic meters),1992,92589.9708355749
+"Renewable internal freshwater resources, total (billion cubic meters)",1992,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1992,34.8688156492511
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1993,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1993,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1993,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1993,0.797728265626911
+"Annual freshwater withdrawals, total (billion cubic meters)",1993,2.6085714286
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1993,2.1259750844
+Renewable internal freshwater resources per capita (cubic meters),1993,91540.2273109009
+"Renewable internal freshwater resources, total (billion cubic meters)",1993,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1993,35.8380242555538
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1994,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1994,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1994,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1994,0.824814329388379
+"Annual freshwater withdrawals, total (billion cubic meters)",1994,2.6971428571
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1994,2.1981604378
+Renewable internal freshwater resources per capita (cubic meters),1994,90331.4917127072
+"Renewable internal freshwater resources, total (billion cubic meters)",1994,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1994,36.4354111458457
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1995,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1995,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1995,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1995,0.851900393180428
+"Annual freshwater withdrawals, total (billion cubic meters)",1995,2.7857142857
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1995,2.2703457911
+Renewable internal freshwater resources per capita (cubic meters),1995,89018.3481243535
+"Renewable internal freshwater resources, total (billion cubic meters)",1995,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1995,36.9429326497502
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1996,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1996,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1996,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1996,0.878986456972477
+"Annual freshwater withdrawals, total (billion cubic meters)",1996,2.8742857143
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1996,2.3425311445
+Renewable internal freshwater resources per capita (cubic meters),1996,87620.578778135
+"Renewable internal freshwater resources, total (billion cubic meters)",1996,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1996,37.0973881599151
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1997,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1997,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1997,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1997,0.906072520764526
+"Annual freshwater withdrawals, total (billion cubic meters)",1997,2.9628571429
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1997,2.4147164978
+Renewable internal freshwater resources per capita (cubic meters),1997,86478.1953296485
+"Renewable internal freshwater resources, total (billion cubic meters)",1997,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1997,36.7366551250818
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1998,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1998,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1998,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1998,0.933158584525994
+"Annual freshwater withdrawals, total (billion cubic meters)",1998,3.0514285714
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1998,2.4869018512
+Renewable internal freshwater resources per capita (cubic meters),1998,85714.2857142857
+"Renewable internal freshwater resources, total (billion cubic meters)",1998,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1998,35.9767637342101
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",1999,44.0
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",1999,46.0
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",1999,10.0
+"Annual freshwater withdrawals, total (% of internal resources)",1999,0.960244648318043
+"Annual freshwater withdrawals, total (billion cubic meters)",1999,3.14
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,1999,2.5590872046
+Renewable internal freshwater resources per capita (cubic meters),1999,85265.0517587547
+"Renewable internal freshwater resources, total (billion cubic meters)",1999,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",1999,36.8414914534816
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2000,65.9339094103
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2000,25.7572880068
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2000,8.3088025829
+"Annual freshwater withdrawals, total (% of internal resources)",2000,1.03748361730887
+"Annual freshwater withdrawals, total (billion cubic meters)",2000,3.3925714286
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2000,2.7649318896
+Renewable internal freshwater resources per capita (cubic meters),2000,84765.5338673303
+"Renewable internal freshwater resources, total (billion cubic meters)",2000,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2000,35.0775363105743
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2001,63.4784661563
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2001,25.0775690533
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2001,11.4439647904
+"Annual freshwater withdrawals, total (% of internal resources)",2001,1.11472258626911
+"Annual freshwater withdrawals, total (billion cubic meters)",2001,3.6451428571
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2001,2.9707765747
+Renewable internal freshwater resources per capita (cubic meters),2001,84267.4913026672
+"Renewable internal freshwater resources, total (billion cubic meters)",2001,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2001,33.7607623287101
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2002,61.654656808
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2002,24.5726998084
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2002,13.7726433836
+"Annual freshwater withdrawals, total (% of internal resources)",2002,1.19196155525994
+"Annual freshwater withdrawals, total (billion cubic meters)",2002,3.8977142857
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2002,3.1766212598
+Renewable internal freshwater resources per capita (cubic meters),2002,82816.2593389895
+"Renewable internal freshwater resources, total (billion cubic meters)",2002,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2002,33.0613738391344
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2003,60.2465355352
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2003,24.1829018701
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2003,15.5705625947
+"Annual freshwater withdrawals, total (% of internal resources)",2003,1.26920052425076
+"Annual freshwater withdrawals, total (billion cubic meters)",2003,4.1502857143
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2003,3.3824659448
+Renewable internal freshwater resources per capita (cubic meters),2003,81197.8545887962
+"Renewable internal freshwater resources, total (billion cubic meters)",2003,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2003,32.5176928599644
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2004,59.1265240482
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2004,23.8728588526
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2004,17.0006170993
+"Annual freshwater withdrawals, total (% of internal resources)",2004,1.34643949324159
+"Annual freshwater withdrawals, total (billion cubic meters)",2004,4.4028571429
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2004,3.5883106299
+Renewable internal freshwater resources per capita (cubic meters),2004,80000.0
+"Renewable internal freshwater resources, total (billion cubic meters)",2004,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2004,31.9054499002039
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2005,58.2144053743
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2005,23.6203649904
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2005,18.1652296352
+"Annual freshwater withdrawals, total (% of internal resources)",2005,1.42367846220183
+"Annual freshwater withdrawals, total (billion cubic meters)",2005,4.6554285714
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2005,3.7941553149
+Renewable internal freshwater resources per capita (cubic meters),2005,79102.0585887419
+"Renewable internal freshwater resources, total (billion cubic meters)",2005,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2005,31.1863035398378
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2006,57.4572127139
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2006,23.4107579462
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2006,19.1320293399
+"Annual freshwater withdrawals, total (% of internal resources)",2006,1.50091743119266
+"Annual freshwater withdrawals, total (billion cubic meters)",2006,4.908
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2006,4.0
+Renewable internal freshwater resources per capita (cubic meters),2006,78143.6696458443
+"Renewable internal freshwater resources, total (billion cubic meters)",2006,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2006,30.4036565026122
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2007,58.5545796738
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2007,21.365119197
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2007,20.0803011292
+"Annual freshwater withdrawals, total (% of internal resources)",2007,1.52331804281346
+"Annual freshwater withdrawals, total (billion cubic meters)",2007,4.98125
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2007,4.0596984515
+Renewable internal freshwater resources per capita (cubic meters),2007,77418.438373029
+"Renewable internal freshwater resources, total (billion cubic meters)",2007,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2007,30.8702148127218
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2008,59.6201404689
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2008,19.3787713918
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2008,21.0010881393
+"Annual freshwater withdrawals, total (% of internal resources)",2008,1.54571865443425
+"Annual freshwater withdrawals, total (billion cubic meters)",2008,5.0545
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2008,4.119396903
+Renewable internal freshwater resources per capita (cubic meters),2008,76764.1673317996
+"Renewable internal freshwater resources, total (billion cubic meters)",2008,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2008,30.0457407086896
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2009,60.6552581542
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2009,17.4491736142
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2009,21.8955682317
+"Annual freshwater withdrawals, total (% of internal resources)",2009,1.56811926605505
+"Annual freshwater withdrawals, total (billion cubic meters)",2009,5.12775
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2009,4.1790953545
+Renewable internal freshwater resources per capita (cubic meters),2009,76000.5578022591
+"Renewable internal freshwater resources, total (billion cubic meters)",2009,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2009,29.6011502597417
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2010,61.6612189963
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2010,15.5739280908
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2010,22.7648529129
+"Annual freshwater withdrawals, total (% of internal resources)",2010,1.59051987767584
+"Annual freshwater withdrawals, total (billion cubic meters)",2010,5.201
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2010,4.238793806
+Renewable internal freshwater resources per capita (cubic meters),2010,75160.3190291218
+"Renewable internal freshwater resources, total (billion cubic meters)",2010,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2010,29.605854616689
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2011,62.3868404111
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2011,14.5804127704
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2011,23.0327468185
+"Annual freshwater withdrawals, total (% of internal resources)",2011,1.94785932721713
+"Annual freshwater withdrawals, total (billion cubic meters)",2011,6.3695
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2011,5.1911165444
+Renewable internal freshwater resources per capita (cubic meters),2011,74589.4160583942
+"Renewable internal freshwater resources, total (billion cubic meters)",2011,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2011,24.7164251075085
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2012,63.1297432331
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2012,13.5632358788
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2012,23.3070208881
+"Annual freshwater withdrawals, total (% of internal resources)",2012,2.30519877675841
+"Annual freshwater withdrawals, total (billion cubic meters)",2012,7.538
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2012,6.1434392828
+Renewable internal freshwater resources per capita (cubic meters),2012,74181.6201991788
+"Renewable internal freshwater resources, total (billion cubic meters)",2012,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2012,21.3631733008368
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2013,63.8905522637
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2013,12.5215419426
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2013,23.5879057937
+"Annual freshwater withdrawals, total (% of internal resources)",2013,2.66253822629969
+"Annual freshwater withdrawals, total (billion cubic meters)",2013,8.7065
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2013,7.0957620212
+Renewable internal freshwater resources per capita (cubic meters),2013,73613.8312960086
+"Renewable internal freshwater resources, total (billion cubic meters)",2013,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2013,19.0065436299578
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2014,64.669922791
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2014,11.4544337464
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2014,23.8756434626
+"Annual freshwater withdrawals, total (% of internal resources)",2014,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2014,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2014,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2014,72401.1956160744
+"Renewable internal freshwater resources, total (billion cubic meters)",2014,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2014,17.3866468462786
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2015,65.4685424719
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2015,10.3609697555
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2015,24.1704877726
+"Annual freshwater withdrawals, total (% of internal resources)",2015,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2015,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2015,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2015,70941.9881112509
+"Renewable internal freshwater resources, total (billion cubic meters)",2015,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2015,18.0358704592285
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2016,66.2871333563
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2016,9.2401613447
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2016,24.472705299
+"Annual freshwater withdrawals, total (% of internal resources)",2016,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2016,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2016,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2016,69366.3689781719
+"Renewable internal freshwater resources, total (billion cubic meters)",2016,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2016,18.7119110571857
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2017,66.0983318567
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2017,9.4986669214
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2017,24.4030012218
+"Annual freshwater withdrawals, total (% of internal resources)",2017,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2017,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2017,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2017,67932.5245138773
+"Renewable internal freshwater resources, total (billion cubic meters)",2017,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2017,19.3476075377795
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2018,65.7324801433
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2018,9.999588304
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2018,24.2679315527
+"Annual freshwater withdrawals, total (% of internal resources)",2018,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2018,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2018,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2018,66726.5232828633
+"Renewable internal freshwater resources, total (billion cubic meters)",2018,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2018,20.0246764890284
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2019,65.587732072
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2019,10.1977762618
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2019,24.2144916661
+"Annual freshwater withdrawals, total (% of internal resources)",2019,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2019,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2019,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2019,65673.2005141388
+"Renewable internal freshwater resources, total (billion cubic meters)",2019,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2019,20.4976517739372
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2020,65.587732072
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2020,10.1977762618
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2020,24.2144916661
+"Annual freshwater withdrawals, total (% of internal resources)",2020,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2020,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2020,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2020,64241.0907233508
+"Renewable internal freshwater resources, total (billion cubic meters)",2020,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2020,20.4105559278989
+"Annual freshwater withdrawals, agriculture (% of total freshwater withdrawal)",2021,65.587732072
+"Annual freshwater withdrawals, domestic (% of total freshwater withdrawal)",2021,10.1977762618
+"Annual freshwater withdrawals, industry (% of total freshwater withdrawal)",2021,24.2144916661
+"Annual freshwater withdrawals, total (% of internal resources)",2021,3.01987767584098
+"Annual freshwater withdrawals, total (billion cubic meters)",2021,9.875
+Level of water stress: freshwater withdrawal as a proportion of available freshwater resources,2021,8.0480847596
+Renewable internal freshwater resources per capita (cubic meters),2021,63975.8965429538
+"Renewable internal freshwater resources, total (billion cubic meters)",2021,327.0
+"Water productivity, total (constant 2015 US$ GDP per cubic meter of total freshwater withdrawal)",2021,21.3384703447816
