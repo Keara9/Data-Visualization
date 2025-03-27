@@ -7,6 +7,7 @@ import dash_bootstrap_components as dbc
 
 #Create the Dash app
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.title = "New Zealand"
 
 #load the data
 df_GDP = pd.read_csv('GDP/GDP cleaned.csv')
@@ -32,9 +33,10 @@ fig_water_stress.update_layout(
 
 # define the layout of the Dash app
        
-app.layout = html.Div(
+app.layout = html.Div([
+    html.H1("New Zealand", style={'textAlign': 'center'}),
     dcc.Tabs([
-        #GDP Tab
+        # GDP Tab
         dcc.Tab(label='GDP Visualization', children=[
             html.H1("New Zealand GDP Visualization", style={'textAlign': 'center'}),
         
@@ -44,28 +46,28 @@ app.layout = html.Div(
                 dcc.Dropdown(
                     id='gdp-series-dropdown',
                     options=[{'label': series, 'value': series} for series in df_GDP['Series Name'].unique()],
-                    value=df_GDP['Series Name'].unique()[0],  # Default value (first series)
+                    value=df_GDP['Series Name'].unique()[0], 
                     clearable=False,
                     style={'width': '50%', 'margin': 'auto'}
                 )
-            ], style={'marginBottom': 20}),
-        
-            #graph to display the gdp data
+            ]),
+
+            # Graph to display the GDP data
             dcc.Graph(id='gdp-graph')
-        ]),  
-        #Infant Mortality Tab
+        ]),
+        # Infant Mortality Tab
         dcc.Tab(label='Infant Mortality Visualization', children=[
             html.H1("Infant Mortality in New Zealand from 1960 to 2022", style={'textAlign': 'center'}),
 
-            #Dropdown to select an Infant Mortality series
+            # Dropdown to select an Infant Mortality series
             html.Div([
                 html.Label("Select an Infant Mortality Series:", style={'fontSize': 18}),
                 dcc.Dropdown(
                     id='infant-mortality-series-dropdown',
                     options=[{'label': series, 'value': series} for series in df_InfantMortality['Series Name'].unique()],
-                    value=df_InfantMortality['Series Name'].unique()[0],  
+                    value=df_InfantMortality['Series Name'].unique()[0],  # Default value (first series)
                     clearable=False,
-                    style={'width': '75%', 'margin': 'auto'}
+                    style={'width': '50%', 'margin': 'auto'}
                 )
             ]),
 
@@ -81,31 +83,33 @@ app.layout = html.Div(
             )
         ]),
 
-        #Freshwater Tab
-    dcc.Tab(label='New Zealand Freshwater Visualizations', children=[
-        html.H1("Freshwater Withdrawals by Industry", style={'textAlign': 'center'}),
-        html.Div([  
-            html.Label("Select a Year:", style={'fontSize': 18}),
-            dcc.Dropdown(
-                id='freshwater-year-dropdown',
-                options=[{'label': year, 'value': year} for year in df_Freshwater['Year'].unique()],
-                value=df_Freshwater['Year'].unique()[0],  # Default value (first year)
-                clearable=False,
-                style={'width': '50%', 'margin': 'auto'}
-            )
-        ]),
-        dcc.Graph(id='freshwater-graph'), 
-        dcc.Graph(figure = fig_water_stress, id='freshwater-graph2'), 
+        # Freshwater Tab
+        dcc.Tab(label='New Zealand Freshwater Visualizations', children=[
+            html.H1("Freshwater Withdrawals by Industry", style={'textAlign': 'center'}),
+            html.Div([  
+                html.Label("Select a Year:", style={'fontSize': 18}),
+                dcc.Slider(
+                    id='freshwater-year-slider',
+                    min=int(df_Freshwater['Year'].min()),
+                    max=int(df_Freshwater['Year'].max()),
+                    step=1,
+                    marks={int(year): str(year) for year in df_Freshwater['Year'].unique()},
+                    value=int(df_Freshwater['Year'].min()), 
+                    tooltip={"placement": "bottom", "always_visible": True}
+                )
+            ]),
+            dcc.Graph(id='freshwater-graph'), 
+            dcc.Graph(figure=fig_water_stress, id='freshwater-graph2'), 
 
-        dash_table.DataTable(
-            id='freshwater-table',
-            columns=[{"name": i, "id": i} for i in df_Freshwater.columns],
-            data=df_Freshwater.to_dict('records'),
-            page_size=10
-        )
-    ])
+            dash_table.DataTable(
+                id='freshwater-table',
+                columns=[{"name": i, "id": i} for i in df_Freshwater.columns],
+                data=df_Freshwater.to_dict('records'),
+                page_size=10
+            )
         ])
-    )
+    ])
+])
 # Callback to update the GDP graph
 @callback(
     Output('gdp-graph', 'figure'),
@@ -113,19 +117,19 @@ app.layout = html.Div(
 )
 def update_gdp_graph(selected_series):
      
-    #Filter the data for the selected series
+    # Filter the data for the selected series
     filtered_gdp_df = df_GDP[df_GDP['Series Name'] == selected_series]
     
-    # Create a line plot with Year on the x-axis and Value on the y-axis
-    fig = px.line(
+    # Scatter plot to compare selected series
+    fig = px.area(
         filtered_gdp_df,
         x='Year',
         y='Value',
-        title=f'{selected_series} Over Time',
-        labels={'Value': selected_series, 'Year': 'Year'},
+        title=f'{selected_series} Over Time in New Zealand',
+        color='Series Name'
     )
     
-    # Update layout for better readability
+    # Update the layout
     fig.update_layout(
         colorway=['#FFA07A'],
         xaxis_title='Year',
@@ -146,7 +150,7 @@ def update_graph(selected_series):
     # Filter the data for the selected series
     filtered_df = df_InfantMortality[df_InfantMortality['Series Name'] == selected_series]
     
-    # Create a line plot with Year on the x-axis and Value on the y-axis
+    # Create a line plot for Infant Mortality
     fig = px.line(
         filtered_df,
         x='Year',  
@@ -165,7 +169,7 @@ def update_graph(selected_series):
 
 @callback(
     Output('freshwater-graph', 'figure'),
-    Input('freshwater-year-dropdown', 'value')
+    Input('freshwater-year-slider', 'value')
 )
 def update_freshwater_graph(selected_year):
     
@@ -180,6 +184,7 @@ def update_freshwater_graph(selected_year):
     ]
     filtered_df = filtered_df[filtered_df['Series Name'].isin(withdrawal_series)]
     
+    # Create a pie chart for freshwatee withdrawals
     fig = px.pie(
         filtered_df,
         values='Value',
