@@ -3,6 +3,7 @@ from dash import Dash, html, dash_table, dcc, callback, Output, Input
 import pandas as pd
 import plotly.express as px
 import dash_bootstrap_components as dbc
+import base64
 
 
 #Create the Dash app
@@ -14,6 +15,8 @@ df_GDP = pd.read_csv('GDP/GDP cleaned.csv')
 df_InfantMortality = pd.read_csv('Infant Mortality/Infant Mortality Cleaned.csv')
 df_Freshwater = pd.read_csv('Freshwater Data/NewZealand Freshwater cleaned.csv')
 
+NZFlag = "data:image/png;base64," + base64.b64encode(open("NZ Flag.png", 'rb').read()).decode('utf-8')
+
  # water stress level over time graph
 water_stress_series = 'Level of water stress: freshwater withdrawal as a proportion of available freshwater resources'
 
@@ -22,7 +25,7 @@ fig_water_stress = px.bar(
     x='Year',
     y='Value',
     title='New Zealand Water Stress Trends (1985-2021)',
-    labels={'Value': 'Water Stress (%)', 'Year': 'Year'},
+    labels={'Value': 'Water Stress', 'Year': 'Year'},
     color_discrete_sequence=['#1f77b4']
 )
 fig_water_stress.update_layout(
@@ -31,14 +34,35 @@ fig_water_stress.update_layout(
         template='plotly_white'
     )
 
+# water resources graph
+water_resources = df_Freshwater[
+    (df_Freshwater['Series Name'] == 'Renewable internal freshwater resources, total (billion cubic meters)') |
+    (df_Freshwater['Series Name'] == 'Annual freshwater withdrawals, total (billion cubic meters)')
+]
+
+fig_water_resources = px.line(
+    water_resources,
+    x='Year',
+    y='Value',
+    color='Series Name',
+    title='New Zealand Water Resources and Freshwater Withdrawals (1985-2021)',
+    labels={'Value': 'Water Resources (billion cubic meters)', 'Year': 'Year', 'Series Name': 'Series'},
+    color_discrete_sequence=px.colors.qualitative.Set1
+)
+
 # define the layout of the Dash app
-       
 app.layout = html.Div([
-    html.H1("New Zealand", style={'textAlign': 'center'}),
+    html.H1(),
+    html.Div([
+        html.Img(src=NZFlag, style={'width': '15%', 'height': '15%', 'float': 'left'}),
+        html.H1("New Zealand Data Analysis", style={'textAlign': 'center'}),
+        html.Img(src=NZFlag, style={'width': '15%', 'height': '15%', 'float': 'right'})
+    ], style={'display': 'flex', 'justify-content': 'space-between', 'align-items': 'center'}),
+
     dcc.Tabs([
         # GDP Tab
         dcc.Tab(label='GDP Visualization', children=[
-            html.H1("New Zealand GDP Visualization", style={'textAlign': 'center'}),
+            html.H1("New Zealand GDP 1960 to 2023", style={'textAlign': 'center'}),
         
             # Dropdown to select a GDP series
             html.Div([
@@ -85,7 +109,7 @@ app.layout = html.Div([
 
         # Freshwater Tab
         dcc.Tab(label='New Zealand Freshwater Visualizations', children=[
-            html.H1("Freshwater Withdrawals by Industry", style={'textAlign': 'center'}),
+            html.H1("Freshwater Withdrawals by Sector", style={'textAlign': 'center'}),
             html.Div([  
                 html.Label("Select a Year:", style={'fontSize': 18}),
                 dcc.Slider(
@@ -100,6 +124,7 @@ app.layout = html.Div([
             ]),
             dcc.Graph(id='freshwater-graph'), 
             dcc.Graph(figure=fig_water_stress, id='freshwater-graph2'), 
+            dcc.Graph(figure=fig_water_resources, id='freshwater-graph3'),
 
             dash_table.DataTable(
                 id='freshwater-table',
